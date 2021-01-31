@@ -70,7 +70,6 @@
     transition: .5s all ease-in-out;
 }
 
-
 .header .container {
     display: flex;
     height: 100%;
@@ -414,9 +413,10 @@ footer .container {
 .social ul {
     display: flex;
     list-style-type: none;
-    width: 270px;
+    width: 230px;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .terms {
