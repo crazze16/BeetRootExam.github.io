@@ -87,7 +87,7 @@ body {
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 9999999999999999999;
+    z-index: 100000;
 }
 
 .menu {
@@ -95,7 +95,7 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 99999999;
+    z-index: 300000;
 }
 
 .scroll {
@@ -477,14 +477,14 @@ footer .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 999999999;
 }
 .map_section_title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 999999999;
-
+    z-index: 10;
+    width: 400px;
+    margin: 0 auto;
 }
 .map_section_title img {
     margin-bottom: 20px;
@@ -617,6 +617,8 @@ form input::placeholder, form textarea::placeholder{
     position: absolute;
     right: -255px;
     top: 220px;
+    z-index: 999;
+
 }
 .inside{
     width: 255px;
