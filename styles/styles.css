@@ -483,7 +483,7 @@ footer .container {
     flex-direction: column;
     align-items: center;
     z-index: 10;
-    width: 400px;
+    width: 250px;
     margin: 0 auto;
 }
 .map_section_title img {
