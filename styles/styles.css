@@ -29,6 +29,41 @@
     font-style: normal
 }
 
+#map {
+    height: 200%;
+    width: 100%;
+    position: absolute;
+    top: -300px;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: "Roboto", "sans-serif";
+    line-height: 30px;
+    padding-left: 10px;
+}
+#test{
+    top: 0;
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    background: red;
+}
 .container {
     margin: 0 auto;
     max-width: 1200px;
@@ -52,7 +87,7 @@
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 99999;
+    z-index: 9999999999999999999;
 }
 
 .menu {
@@ -397,6 +432,8 @@
 }
 
 /*footer*/
+
+
 footer {
     height: 185px;
     background: #9f9acf;
@@ -430,8 +467,6 @@ footer .container {
 .map_section{
     width: 100%;
     height: 900px;
-    background: url("../images/map_bg.jpg") center center;
-    background-size: cover;
     position: relative;
     overflow: hidden;
 }
@@ -442,11 +477,14 @@ footer .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 999999999;
 }
 .map_section_title {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 999999999;
+
 }
 .map_section_title img {
     margin-bottom: 20px;
@@ -462,6 +500,8 @@ footer .container {
     padding: 0 20px;
     max-width: 900px;
     width: 100%;
+    z-index: 999999999;
+
 }
 .inputs{
     display: flex;
@@ -500,7 +540,9 @@ form textarea{
 
 }
 form textarea:focus, form input:focus{
-    outline: 1px solid #9f9acf;
+    outline: none;
+    border-radius: 3px;
+    border: 2px solid #9f9acf;
 }
 form button{
     margin: 55px auto 0;
@@ -579,7 +621,7 @@ form input::placeholder, form textarea::placeholder{
 .inside{
     width: 255px;
     height: 90px;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 15px 30px 0;
     color: #575051;
